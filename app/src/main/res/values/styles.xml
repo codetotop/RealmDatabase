@@ -8,4 +8,23 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="StyleTitleBook">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="StyleTitleDialog">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StyleTitleDialog.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_bg_button</item>
+
+    </style>
+
 </resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/dialog_add_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="46dp"
+        android:layout_marginStart="46dp"
+        android:background="@drawable/shape_dialog_add_book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/dialog_add_tv_title"
+            style="@style/StyleTitleDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="Add"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dialog_add_til_person_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:hint="Person name"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_add_tv_title">
+
+            <EditText
+                android:id="@+id/dialog_add_edt_person_name"
+                style="@style/StyleTitleBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dialog_add_til_dog_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:hint="Dog name"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_add_til_person_name">
+
+            <EditText
+                android:id="@+id/dialog_add_edt_dog_name"
+                style="@style/StyleTitleBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dialog_til_dog_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:hint="Dog Age"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_add_til_dog_name">
+
+            <EditText
+                android:id="@+id/dialog_add_edt_dog_age"
+                style="@style/StyleTitleBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/dialog_add_btn_ok"
+            style="@style/StyleTitleDialog.Button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/dialog_add_til_person_name"
+            app:layout_constraintTop_toBottomOf="@id/dialog_til_dog_age" />
+
+        <TextView
+            android:id="@+id/dialog_add_btn_cancel"
+            style="@style/StyleTitleDialog.Button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="Cancel"
+            app:layout_constraintBottom_toBottomOf="@id/dialog_add_btn_ok"
+            app:layout_constraintEnd_toStartOf="@id/dialog_add_btn_ok"
+            app:layout_constraintTop_toTopOf="@id/dialog_add_btn_ok" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

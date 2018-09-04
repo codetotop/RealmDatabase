@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RealmDatabaseExample</string>
+    <string name="warning">Chưa nhập đầu sách !</string>
 </resources>
